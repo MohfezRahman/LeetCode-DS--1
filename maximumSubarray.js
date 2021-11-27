@@ -21,8 +21,9 @@
 // 1 <= nums.length <= 105
 // -104 <= nums[i] <= 104
 var findMaxSubArray = function (nums) {
-  let sum = 0;
-  let max = -Number.MAX_VALUE;
+  var sum = 0;
+  //var max = -Number.MAX_VALUE;
+  var max = -Infinity;
   for (var i of nums) {
     sum = sum + i;
     if (sum > max) max = sum;
